@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sign_in">
+
+    <fragment
+        android:id="@+id/sign_in"
+        android:name="com.example.arhomeimprovement.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FrontPage_to_SignIn"
+            app:destination="@id/sign_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.arhomeimprovement.SignInFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/sign_in_fragment">
+
+        <action
+            android:id="@+id/action_SignIn_to_FrontPage"
+            app:destination="@id/sign_in" />
+    </fragment>
+</navigation>
