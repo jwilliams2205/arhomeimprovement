@@ -23,11 +23,18 @@ public class SignInFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.sign_in_cancel_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(SignInFragment.this)
                         .navigate(R.id.action_SignIn_to_FrontPage);
+            }
+        });
+        view.findViewById(R.id.sign_in_confirm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(SignInFragment.this)
+                        .navigate(R.id.action_sign_in_to_home_page);
             }
         });
     }

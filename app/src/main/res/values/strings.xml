@@ -12,4 +12,22 @@
     <string name="sign_in">Sign In</string>
     <string name="login_bkgd">login_bkgd</string>
     <string name="create_account">Create Account</string>
+    <string name="create_account_label">Create Account</string>
+    <string name="sign_in_label">Sign In</string>
+    <string name="cancel_button_string">Cancel</string>
+    <string name="password_text">Password:</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="background_trans_img">Background Effect</string>
+    <string name="small_logo">Small Logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_message">What Would You Like to Do?</string>
+    <string name="back_button">Back Button</string>
+    <string name="scan_furniture_for_ar">Scan Furniture via AR</string>
+    <string name="create_a_room_layout">Create a Room Layout</string>
+    <string name="view_saved_rooms">View Saved Rooms</string>
+    <string name="account_page_text">Account Page</string>
+    <string name="help_button_text">Need Help?</string>
 </resources>
