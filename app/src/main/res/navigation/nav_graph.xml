@@ -52,5 +52,112 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_home_page_to_scan_furniture"
+            app:destination="@id/scan_furniture"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_home_page_to_create_room"
+            app:destination="@id/create_room"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_home_page_to_view_saved_rooms"
+            app:destination="@id/view_saved_rooms"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_home_page_to_account_page"
+            app:destination="@id/account_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_home_page_to_help_page"
+            app:destination="@id/help_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/scan_furniture"
+        android:name="com.example.arhomeimprovement.scan_furniture"
+        android:label="fragment_scan_furniture"
+        tools:layout="@layout/fragment_scan_furniture" >
+        <action
+            android:id="@+id/action_scan_furniture_to_home_page"
+            app:destination="@id/home_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/create_room"
+        android:name="com.example.arhomeimprovement.create_room"
+        android:label="fragment_create_room"
+        tools:layout="@layout/fragment_create_room" >
+        <action
+            android:id="@+id/action_create_room_to_home_page"
+            app:destination="@id/home_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/view_saved_rooms"
+        android:name="com.example.arhomeimprovement.view_saved_rooms"
+        android:label="fragment_view_saved_rooms"
+        tools:layout="@layout/fragment_view_saved_rooms" >
+        <action
+            android:id="@+id/action_view_saved_rooms_to_home_page"
+            app:destination="@id/home_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/account_page"
+        android:name="com.example.arhomeimprovement.account_page"
+        android:label="fragment_account_page"
+        tools:layout="@layout/fragment_account_page" >
+        <action
+            android:id="@+id/action_account_page_to_home_page"
+            app:destination="@id/home_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/help_page"
+        android:name="com.example.arhomeimprovement.help_page"
+        android:label="fragment_help_page"
+        tools:layout="@layout/fragment_help_page" >
+        <action
+            android:id="@+id/action_help_page_to_home_page"
+            app:destination="@id/home_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_help_page_to_home_page2"
+            app:destination="@id/home_page"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
 </navigation>

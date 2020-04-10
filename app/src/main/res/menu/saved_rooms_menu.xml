@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/room_1"
+        android:title="@string/room_1" />
+    <item
+        android:id="@+id/room_2"
+        android:title="@string/room_2" />
+    <item
+        android:id="@+id/room_3"
+        android:title="@string/room_3" />
+    <item
+        android:id="@+id/room_4"
+        android:title="@string/room_4" />
+    <item
+        android:id="@+id/cancel_placement"
+        android:title="@string/cancel_dialog"/>
+</menu>
