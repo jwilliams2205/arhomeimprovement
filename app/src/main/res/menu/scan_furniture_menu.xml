@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/item_1"
+        android:icon="@drawable/clipart631668"
         android:title="@string/room_creation_item_1" />
     <item
         android:id="@+id/item_2"
+        android:icon="@drawable/clipart631668"
         android:title="@string/room_creation_item_2"/>
     <item
         android:id="@+id/item_3"
+        android:icon="@drawable/clipart631668"
         android:title="@string/room_creation_item_3"/>
     <item
         android:id="@+id/item_4"
+        android:icon="@drawable/clipart631668"
         android:title="@string/room_creation_item_4"/>
     <item
         android:id="@+id/cancel_placement"

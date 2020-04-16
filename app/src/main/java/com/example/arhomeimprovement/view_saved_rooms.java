@@ -6,10 +6,14 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -68,11 +72,27 @@ public class view_saved_rooms extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        final Toast infoMessage = Toast.makeText(getActivity().getApplicationContext(), "You can get a list of the furniture you want in each room here.", Toast.LENGTH_LONG);
+        infoMessage.setGravity(Gravity.CENTER, 0, 0);
+        infoMessage.show();
+
+        TextView couchtext1 = getActivity().findViewById(R.id.couch1savedroom);
+        TextView couchtext2 = getActivity().findViewById(R.id.couch2savedroom);
+        TextView couchtext3 = getActivity().findViewById(R.id.couch3savedroom);
+        TextView couchtext4 = getActivity().findViewById(R.id.couch4savedroom);
+        couchtext1.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.smallcouchicon,0,0,0);
+        couchtext2.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.smallcouchicon,0,0,0);
+        couchtext3.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.smallcouchicon,0,0,0);
+        couchtext4.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.smallcouchicon,0,0,0);
+
+
         view.findViewById(R.id.back_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                infoMessage.cancel();
                 NavHostFragment.findNavController(view_saved_rooms.this)
                         .navigate(R.id.action_view_saved_rooms_to_home_page);
+
             }
         });
 
@@ -80,6 +100,16 @@ public class view_saved_rooms extends Fragment {
             public void onClick(View view) {
                 final PopupMenu popup = new PopupMenu(getActivity(), getView().findViewById(R.id.view_furniture_in_saved_room));
                 popup.getMenuInflater().inflate(R.menu.saved_rooms_menu, popup.getMenu());
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        getActivity().findViewById(R.id.couch1savedroom).setVisibility(View.VISIBLE);
+                        getActivity().findViewById(R.id.couch2savedroom).setVisibility(View.VISIBLE);
+                        getActivity().findViewById(R.id.couch3savedroom).setVisibility(View.VISIBLE);
+                        getActivity().findViewById(R.id.couch4savedroom).setVisibility(View.VISIBLE);
+                        return false;
+                    }
+                });
                 popup.show();
             }
         });

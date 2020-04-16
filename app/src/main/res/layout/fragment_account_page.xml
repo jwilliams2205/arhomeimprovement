@@ -51,13 +51,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <EditText
+        <TextView
             android:id="@+id/editText3"
             style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
             android:layout_width="115dp"
             android:layout_height="54dp"
             android:ems="10"
-            android:inputType="textPersonName"
             android:text="@string/username"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,13 +80,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.195" />
 
-        <EditText
+        <TextView
             android:id="@+id/editText5"
             style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
             android:layout_width="113dp"
             android:layout_height="52dp"
             android:ems="10"
-            android:inputType="textPersonName"
             android:text="@string/password_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +95,7 @@
             app:layout_constraintVertical_bias="0.304" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/change_password_accountpage_button"
             android:layout_width="151dp"
             android:layout_height="48dp"
             android:background="@drawable/ripple"

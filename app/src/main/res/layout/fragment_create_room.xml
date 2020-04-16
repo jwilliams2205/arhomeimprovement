@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,13 +12,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/create_room_camera"
+            android:layout_width="790dp"
+            android:layout_height="658dp"
+            android:layout_marginTop="142dp"
+            android:layout_marginBottom="142dp"
+            android:contentDescription="@string/create_room_room_pic"
+            android:src="@drawable/room2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.909" />
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="633dp"
             android:layout_height="69dp"
             android:background="@color/colorPrimaryDark"
-            android:textColor="#FFFFFFFF"
             android:minHeight="?attr/actionBarSize"
+            android:textColor="#FFFFFFFF"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +41,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="60dp"
@@ -39,6 +55,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023" />
+
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="92dp"
@@ -51,18 +68,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="287dp"
-            android:layout_height="379dp"
-            android:background="@android:color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.517"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3" />
 
         <Button
             android:id="@+id/select_saved_furniture_button"
@@ -91,4 +96,16 @@
             app:layout_constraintVertical_bias="0.931" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+    <ImageView
+        android:id="@+id/couch_create_pic"
+        android:layout_width="263dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="319dp"
+        android:contentDescription="@string/couch_pic"
+        android:src="@drawable/couch_clipart_safa_3_transparent"
+        android:visibility="invisible"
+/>
+</RelativeLayout>

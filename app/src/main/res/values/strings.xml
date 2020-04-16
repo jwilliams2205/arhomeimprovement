@@ -54,4 +54,12 @@
     <string name="help_hint">Type Your Problem Here</string>
     <string name="create_account_string">Create Account</string>
     <string name="cancel_string">Cancel</string>
+    <string name="email_hint">Email Address</string>
+    <string name="current_password_hint">Current Password</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_new_password_hint">Confirm New Password</string>
+    <string name="camera_screen_pic">camera_screen_pic</string>
+    <string name="couch_pic">couch_pic</string>
+    <string name="create_room_room_pic">create_room_room_pic</string>
+    <string name="couch">Couch</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.arhomeimprovement;
 
+import android.app.Dialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +10,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -74,5 +76,37 @@ public class account_page extends Fragment {
                         .navigate(R.id.action_account_page_to_home_page);
             }
         });
+
+        view.findViewById(R.id.change_password_accountpage_button).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                callLoginDialog();
+            }
+        });
+    }
+
+    public void callLoginDialog(){
+
+        final Dialog loginDialog = new Dialog(getActivity());
+        loginDialog.setContentView(R.layout.change_password_dialog);
+        loginDialog.setCancelable(false);
+        loginDialog.show();
+        Button changePasswordButton = (Button) loginDialog.findViewById(R.id.change_password_confirm_button);
+        Button cancelPasswordChangeButton = (Button) loginDialog.findViewById(R.id.change_password_cancel_button);
+
+        changePasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loginDialog.dismiss();
+            }
+        });
+
+        cancelPasswordChangeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loginDialog.dismiss();
+            }
+        });
+
     }
 }
