@@ -10,13 +10,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="633dp"
             android:layout_height="69dp"
             android:background="@color/colorPrimaryDark"
-            android:textColor="#FFFFFFFF"
             android:minHeight="?attr/actionBarSize"
+            android:textColor="#FFFFFFFF"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="60dp"
@@ -37,6 +39,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023" />
+
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="92dp"
@@ -49,17 +52,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-        <View
-            android:id="@+id/view"
-            android:layout_width="287dp"
-            android:layout_height="379dp"
-            android:background="@android:color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.517"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3" />
 
         <Button
             android:id="@+id/view_furniture_in_saved_room"
@@ -86,6 +78,63 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.931" />
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="446dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.396">
+
+            <TextView
+                android:id="@+id/couch1savedroom"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="@string/couch"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/couch2savedroom"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="@string/couch"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/couch3savedroom"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="@string/couch"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/couch4savedroom"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="@string/couch"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -9,18 +9,14 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import android.text.InputType;
-import android.view.ActionMode;
-import android.view.ContextMenu;
+import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -81,6 +77,10 @@ public class scan_furniture extends Fragment{
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        Toast infoMessage = Toast.makeText(getActivity().getApplicationContext(), "You can take a picture of your furniture and save it for later!", Toast.LENGTH_LONG);
+        infoMessage.setGravity(Gravity.TOP, 0, 0);
+        infoMessage.show();
+
         view.findViewById(R.id.back_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -126,7 +126,6 @@ public class scan_furniture extends Fragment{
                         return false;
                     }
                 });
-
                 popup.show();
             }
         });

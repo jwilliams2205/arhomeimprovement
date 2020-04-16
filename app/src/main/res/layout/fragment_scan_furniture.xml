@@ -53,28 +53,41 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023" />
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="295dp"
-            android:layout_height="461dp"
-            android:background="@android:color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/scan_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/scan_button"
             android:background="@drawable/ripple"
+            android:text="@string/scan_button"
             android:textColor="#FFFFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.944" />
+
+        <ImageView
+            android:id="@+id/camera_screen_scan"
+            android:layout_width="695dp"
+            android:layout_height="711dp"
+            android:contentDescription="@string/room_1"
+            android:src="@drawable/room1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/couch_camera_screen"
+            android:layout_width="247dp"
+            android:layout_height="112dp"
+            android:contentDescription="@string/couch_pic"
+            android:src="@drawable/couch_clipart_safa_3_transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.589" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
