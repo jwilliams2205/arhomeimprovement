@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/front_page"
-        android:name="com.example.arhomeimprovement.FirstFragment"
+        android:name="com.hciclassproject.arhomeimprovement.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/sign_in"
-        android:name="com.example.arhomeimprovement.SignInFragment"
+        android:name="com.hciclassproject.arhomeimprovement.SignInFragment"
         android:label="@string/sign_in_label"
         tools:layout="@layout/sign_in_fragment">
 
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/home_page"
-        android:name="com.example.arhomeimprovement.home_page"
+        android:name="com.hciclassproject.arhomeimprovement.home_page"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
@@ -90,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/scan_furniture"
-        android:name="com.example.arhomeimprovement.scan_furniture"
+        android:name="com.hciclassproject.arhomeimprovement.scan_furniture"
         android:label="fragment_scan_furniture"
         tools:layout="@layout/fragment_scan_furniture" >
         <action
@@ -103,7 +103,7 @@
     </fragment>
     <fragment
         android:id="@+id/create_room"
-        android:name="com.example.arhomeimprovement.create_room"
+        android:name="com.hciclassproject.arhomeimprovement.create_room"
         android:label="fragment_create_room"
         tools:layout="@layout/fragment_create_room" >
         <action
@@ -116,7 +116,7 @@
     </fragment>
     <fragment
         android:id="@+id/view_saved_rooms"
-        android:name="com.example.arhomeimprovement.view_saved_rooms"
+        android:name="com.hciclassproject.arhomeimprovement.view_saved_rooms"
         android:label="fragment_view_saved_rooms"
         tools:layout="@layout/fragment_view_saved_rooms" >
         <action
@@ -129,7 +129,7 @@
     </fragment>
     <fragment
         android:id="@+id/account_page"
-        android:name="com.example.arhomeimprovement.account_page"
+        android:name="com.hciclassproject.arhomeimprovement.account_page"
         android:label="fragment_account_page"
         tools:layout="@layout/fragment_account_page" >
         <action
@@ -142,7 +142,7 @@
     </fragment>
     <fragment
         android:id="@+id/help_page"
-        android:name="com.example.arhomeimprovement.help_page"
+        android:name="com.hciclassproject.arhomeimprovement.help_page"
         android:label="fragment_help_page"
         tools:layout="@layout/fragment_help_page" >
         <action
